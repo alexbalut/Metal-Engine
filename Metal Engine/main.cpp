@@ -11,6 +11,8 @@
 #define CA_PRIVATE_IMPLEMENTATION
 
 #include <Metal/Metal.hpp>
+#include <AppKit/Appkit.hpp>
+#include <MetalKit/MetalKit.hpp>
 
 #include <iostream>
 

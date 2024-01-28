@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D31FA2FB2B66F3CE00B3B233 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D31FA2FA2B66F3CE00B3B233 /* main.cpp */; };
+		D3B1347D2B67054500CF2B34 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B1347C2B67054500CF2B34 /* MetalKit.framework */; };
+		D3B1347F2B67054B00CF2B34 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B1347E2B67054B00CF2B34 /* AppKit.framework */; };
+		D3B134812B67055500CF2B34 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B134802B67055500CF2B34 /* Metal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		D31FA2F72B66F3CE00B3B233 /* Metal Engine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Metal Engine"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31FA2FA2B66F3CE00B3B233 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D3B1347C2B67054500CF2B34 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		D3B1347E2B67054B00CF2B34 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D3B134802B67055500CF2B34 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3B134812B67055500CF2B34 /* Metal.framework in Frameworks */,
+				D3B1347F2B67054B00CF2B34 /* AppKit.framework in Frameworks */,
+				D3B1347D2B67054500CF2B34 /* MetalKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +52,7 @@
 			children = (
 				D31FA2F92B66F3CE00B3B233 /* Metal Engine */,
 				D31FA2F82B66F3CE00B3B233 /* Products */,
+				D3B1347B2B67054500CF2B34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +70,16 @@
 				D31FA2FA2B66F3CE00B3B233 /* main.cpp */,
 			);
 			path = "Metal Engine";
+			sourceTree = "<group>";
+		};
+		D3B1347B2B67054500CF2B34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3B134802B67055500CF2B34 /* Metal.framework */,
+				D3B1347E2B67054B00CF2B34 /* AppKit.framework */,
+				D3B1347C2B67054500CF2B34 /* MetalKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,9 +264,12 @@
 		D31FA2FF2B66F3CE00B3B233 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UK7KL3NY5M;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "/Users/alexanderbalut/Documents/metal-cpp";
+				"HEADER_SEARCH_PATHS[arch=*]" = "/Users/alexanderbalut/Documents/metal-cpp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -254,9 +277,12 @@
 		D31FA3002B66F3CE00B3B233 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UK7KL3NY5M;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "/Users/alexanderbalut/Documents/metal-cpp";
+				"HEADER_SEARCH_PATHS[arch=*]" = "/Users/alexanderbalut/Documents/metal-cpp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
